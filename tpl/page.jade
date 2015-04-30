@@ -1,0 +1,38 @@
+doctype
+html
+    head
+        title= "RangeChat"
+        style
+          include style.css
+        script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+        script(src='/socket.io/socket.io.js')
+        script(src='/chat.js')
+        link(href='data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AKeK/wCUlJQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMwAAAAAAAAAxMAAAMzMzMzEwAAMRERERERMAMRERERERETAxEREiIRERMDEREiIiEREwMREiIiIhETAxESIiIiERMDEREiEiEREwMRERERERETADERERERETAAAzMzMzMzAAAAAAAAAAAAD//wAA//8AAP+PAAD/xwAAwAcAAIADAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAgAMAAMAHAAD//wAA', rel='icon', type='image/x-icon')
+
+    body
+      #container
+        #title
+          h1 RangeChat
+          h2 NextGen chatting for health professionals
+        #nickWrap
+            p.centerText Enter a username:
+              p#nickError
+              form#setNick
+                input#nickname(size='35')
+                input(type='submit' value="Go")
+        #contentWrap
+          #chatWrap
+            #chat
+              p#history show recent...
+            form#send-message
+
+              input#message(size='35')
+              input(type='submit' value="Go")
+
+          h3 Users Online:
+          #users
+        br
+        h2.feature @user - private msg
+        h2.feature !user -  urgent msg
+
+        h5.footer Developed with <3 by Amol Sidhu
