@@ -1,6 +1,6 @@
 # rangeChat
 
-[Demo](rangechat.herokuapp.com)
+[Demo](http://rangechat.herokuapp.com)
 
 This chat-server is an open chat room, and anybody with a unique username can log in and start chatting. I tested the chatting of multiple users by opening the website on multiple tabs (and VMs) and logging into the chat room using a unique username for each instance. Attempt to duplicate a username results in an error to the user. 
 
