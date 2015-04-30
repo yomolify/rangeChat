@@ -8,7 +8,7 @@ var express = require("express"),
 console.log("Listening on port " + port);
 
 // Initialize Database
-mongoose.connect('mongodb://heroku_app36376624:hjgev4vfac3dhntijreuile2ns@ds045011.mongolab.com:45011/heroku_app36376624/chat', function(err) {
+mongoose.connect('process.env.MONGO_URL, function(err) {
     if (err) {
         console.log(err);
     } else {
